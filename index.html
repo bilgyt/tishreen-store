@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Tishreen Store</title>
+<style>
+body{margin:0;font-family:Arial;background:#0f172a;color:#fff;text-align:center}
+header{padding:20px;background:#1e293b;font-size:28px;font-weight:bold}
+.products{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;padding:20px}
+.card{background:#1e293b;border-radius:12px;padding:20px}
+button{background:#22c55e;border:none;padding:10px 20px;color:#fff;border-radius:8px;cursor:pointer}
+footer{margin-top:20px;padding:10px;background:#1e293b}
+a{color:#22c55e;text-decoration:none}
+</style>
+</head>
+<body>
+
+<header>متجر تشرين للألعاب والخدمات الرقمية</header>
+
+<div class="products">
+  <div class="card">
+    <h3>PUBG UC</h3>
+    <p>شحن شدات ببجي</p>
+    <button onclick="order('PUBG UC')">اطلب الآن</button>
+  </div>
+
+  <div class="card">
+    <h3>COD Points</h3>
+    <p>شحن نقاط كول اوف ديوتي</p>
+    <button onclick="order('COD Points')">اطلب الآن</button>
+  </div>
+
+  <div class="card">
+    <h3>Free Fire Diamonds</h3>
+    <p>شحن جواهر فري فاير</p>
+    <button onclick="order('Free Fire')">اطلب الآن</button>
+  </div>
+
+  <div class="card">
+    <h3>Ushare IPTV</h3>
+    <p>تجديد وبيع اشتراكات</p>
+    <button onclick="order('Ushare IPTV')">اطلب الآن</button>
+  </div>
+
+  <div class="card">
+    <h3>خطوط Alfa / Touch</h3>
+    <p>بيع خطوط جديدة</p>
+    <button onclick="order('SIM Lines')">اطلب الآن</button>
+  </div>
+</div>
+
+<footer>
+  تواصل عبر واتساب للطلب السريع<br/>
+  <a href="https://wa.me/96179336467">اضغط هنا للطلب</a>
+</footer>
+
+<script>
+function order(product){
+  window.location.href = "https://wa.me/96179336467?text=مرحبا، اريد طلب " + product;
+}
+</script>
+
+</body>
+</html>
